@@ -1,6 +1,7 @@
 angular.module('myBlog', [])
 .controller('MainCtrl', [
   '$scope',
+  
 function($scope){
   $scope.test = 'Hello World:';
 
@@ -11,7 +12,9 @@ function($scope){
     {title: 'post 4', upvotes: 4},
     {title: 'post 5', upvotes: 7}
   ];
+
   $scope.addPost = function(){
     $scope.posts.push({title: 'A new post!', upvotes: 0});
   };
+
 }]);
