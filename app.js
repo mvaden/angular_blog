@@ -20,4 +20,8 @@ function($scope){
 
   if(!$scope.title || $scope.title === '') { return; }
 
+  $scope.incrementUpvotes = function(post){
+    post.upvotes += 1;
+  };
+
 }]);
